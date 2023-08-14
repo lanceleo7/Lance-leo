@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic-Tac-Toe</title>
+  <script src="tic-tac-toe.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="tic-tac-toe.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="title-wrapper">
+      <h2 id="game-title">Tic - Tac - Toe</hi>
+    </div>
+      <div class="board" id="game-container">
+        <div id="row-1">  
+          <div onclick="flag0()" class="cell" id="cell0"></div>
+          <div onclick="flag1()" class="cell" id="cell1"></div>
+          <div onclick="flag2()" class="cell" id="cell2"></div>
+        </div>
+        <div id="row-2">  
+          <div onclick="flag3()" class="cell" id="cell3"></div>
+          <div onclick="flag4()" class="cell" id="cell4"></div>
+          <div onclick="flag5()" class="cell" id="cell5"></div>
+        </div>
+        <div id="row-3">
+          <div onclick="flag6()" class="cell" id="cell6"></div>
+          <div onclick="flag7()" class="cell" id="cell7"></div>
+          <div onclick="flag8()" class="cell" id="cell8"></div>
+        </div>
+      </div>
+      <div id="game-status-wrapper">
+        <div class="game-status" id="game-status">It's X's turn</div>
+      </div>
+      <div id="button-wrapper">
+        <input type="text" value="0" autocomplete="off" id="player1">
+        <button onclick="restartbtn()" id="restart-btn">Restart</button>
+        <input type="text" value="0" autocomplete="off" id="player2">
+      </div>
+    
+  </div>
+  <div id="winning_message">
+   
+  </div>
+</body>
+
+</html>

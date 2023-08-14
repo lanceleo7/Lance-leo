@@ -1,0 +1,592 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: #03011e;
+    font-family: 'Poppins', sans-serif;
+    animation: start 2s linear ;
+}
+
+
+#name{
+    display: flex;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #03011e;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #00abf0;
+    transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #00acf033;
+    transition: 1s;
+}
+
+
+
+.name{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Shadows Into Light';
+    letter-spacing: 5px;
+    color: #00abf0;
+    animation: glitch 2s linear infinite;
+}
+
+@keyframes glitch{
+    0%{text-shadow:  0 0 0px;}
+    20%{text-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; color: white}
+    30%{text-shadow:  0 0 0px;}
+    40%{text-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; color: white}
+    
+    60%{text-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; color: white}
+    90%{text-shadow:  0 0 0px;}
+    95%{text-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; color: white}
+    
+    100%{text-shadow:  0 0 0px;}
+}
+
+@keyframes glitch_red{
+    0%{text-shadow:  0 0 0px;}
+    20%{text-shadow:  0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red; color: white}
+    30%{text-shadow:  0 0 0px;}
+    40%{text-shadow:  0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red; color: white}
+    
+    60%{text-shadow:  0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red; color: white}
+    90%{text-shadow:  0 0 0px;}
+    95%{text-shadow:  0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red; color: white}
+    
+    100%{text-shadow:  0 0 0px;}
+}
+.name:hover{
+    animation: glitch .5s linear infinite;
+
+}
+
+header{
+    height: 5em;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    display: flex;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(transparent, none);
+    align-items: center;
+    border: none;
+    position: fixed;
+    top: 0;
+    
+}
+
+header #logo{
+    color: white;
+    margin-left: 10%;
+    font-size: 2em;
+    font-family: 'Shadows Into Light';
+    letter-spacing: 2px;
+    transition: .8s;
+    text-decoration: none;
+
+}
+
+header #logo:hover{
+    animation: glitch .5s linear infinite;
+
+}
+
+header nav{
+    margin-right: 4em;
+
+}
+header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Shadows Into Light';
+    font-size: 1em;
+    color: white;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+
+
+header nav a:hover{
+    text-decoration: 1px #00abf0 underline ;
+    
+    
+}
+
+section{
+    
+    color: white;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    
+}
+
+@keyframes start{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+.one{
+    padding-left: 10%;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+
+.two{
+    padding-left: 10% ;
+}
+
+.home-content{
+    width: 35em;
+    height: fit-content;
+ 
+}
+
+.home-content #h1{
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.home-content #h3{
+    color: #00abf0;
+    letter-spacing: 1px;
+    margin-top: -40px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.home-content p{
+    margin-top: -25px;
+    font-size: 15px;
+    font-weight: 400;
+
+    letter-spacing: 2px;
+    font-family: "Shadows Into Light";
+}
+.home-content #btn{
+
+    width: 20em;
+    height: 4em;
+    align-items: center;
+    display: flex;
+}
+
+
+.home-content #btn button{
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    color: #00abf0;
+    border: 1px solid #00abf0;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.home-content #btn #btn-talk{
+    margin-left: 30px;
+}
+
+.home-content #btn button:hover{
+    background-color: #00abf0;
+    color: #03011e;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: 1px solid #03011e;
+}
+
+#picture{
+    
+    width: 25em;
+    margin-left: 9em;
+    height: 80vh;
+    background-color: transparent;
+    background: url('astro.png')center no-repeat;
+    animation: bg 6s linear infinite, border-steady 20s infinite;
+    border-radius: 30px;
+
+    
+    
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+/*
+#container #bubble span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #00abf0;
+    margin: 0 4px;
+    box-shadow: 0 0 0 10px #4fc4dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    z-index: 3;
+}
+*/
+
+#picture:hover{
+    animation: bg 6s linear infinite, border .5s linear infinite;
+    
+
+}
+
+
+#links{
+    top: 250px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+#links button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    font-size: 1.2em;
+    background-color: #03011e;
+    transition: .5s;
+}
+
+#links button:hover{
+    background-color: #00abf0;
+    color: #03011e;
+}
+
+
+
+
+
+
+
+
+
+
+.two{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#two-content  {
+    
+    width: 100%;
+    height: 85vh;
+    display: flex;
+
+}
+
+#section-two #title-two{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
+
+}
+#section-two #title-two h1{
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+}
+
+#two-content #message-wrapper{
+    width: 40em;
+
+    height: 30em;
+    
+}
+
+#two-content #message-wrapper #date{
+
+    height: 7em;
+    width: 100%;
+    
+}
+
+#two-content #message-wrapper #date div{
+    
+    width: 100%;
+    height: fit-content;
+    letter-spacing: 2px;
+    font-family: "Shadows Into Light";
+}
+
+#icon{
+    color: #00abf0;
+    margin-left: 20px;
+}
+
+#name-two{
+    letter-spacing: 2px;
+    display: flex;
+    margin-left: 5px;
+}
+
+#name-two #status{
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+}
+
+#name-two #status #back{
+    margin-left: 20px;
+    color: red;
+    font-weight: 800;
+
+}
+
+#name-two #status #front{
+    margin-left: 10px;
+    color: yellow;
+
+}
+
+#name-two #status h3{
+    font-size: .7em;
+}
+
+#two-content #message-wrapper #space{
+    height: 1em;
+    width: 100%;
+}
+
+#two-content #message-wrapper{
+    margin-left: 20px;
+}
+
+#two-content #message{
+    width: 30em;
+    align-items: center;
+    display: flex;
+}
+
+#two-content #message p{
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+}
+
+#two-content #img{
+    width: 27em;
+    height: 30em;
+    border:  1px solid white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #00abf0;
+}
+
+
+.three{
+    padding: 0 10%;
+}
+
+.three #title-three{
+    width: 100%;
+    height: 70px;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+
+}
+
+.three #three-content{
+    height: 85vh;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.three #three-content #msg-wrapper{
+    width: 100%;
+    height: 15em;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.three #three-content #web-wrapper{
+    width: 100%;
+    height: 26.5em;
+    border: 1px solid blue;
+    display: flex;
+    padding: 3%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+.three #three-content #web-wrapper .web{
+    width: 2500px;
+    height: 380px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 1px solid #00abf0;
+    background-size: 10em;
+    justify-content: center;
+    animation: bg 3s linear, border 3s linear;
+    
+}
+
+.three #three-content #web-wrapper #web1{
+    margin-left: 0;
+}
+
+.three #three-content #web-wrapper .web img{
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 85%;
+    border: 1px solid transparent;
+    
+}
+
+.three #three-content #web-wrapper .web #content{
+    margin-top: -15px;
+    height: 107px;
+    width: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:10px ;
+    padding-top: 0;
+
+    border: 1px solid transparent;
+}
+
+.three #three-content #web-wrapper .web #content p{
+    font-size: 0.8em;
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+}
+
+.three #three-content #web-wrapper .web #btn-wrapper{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.three #three-content #web-wrapper .web #btn-wrapper button{
+    width: 100px;
+    height: 40px;
+    background-color: #03011e;
+    border: 1px solid #00abf0;
+    color: #00abf0;
+    font-size: 1em;
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.three #three-content #web-wrapper .web #btn-wrapper button:hover{
+    background-color: #00abf0;
+    color: #03011e;
+    font-weight: 700;
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .home-content #name #h1{
+        font-size: 2em;
+    }
+
+    
+}
+
+@keyframes border{
+    
+    0%{box-shadow: 0 0 10px #00abf0; border: 1px solid white; }
+    70%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; border: 1px solid white;}
+    90%{box-shadow: 0 0 10px #00abf0; border: 1px solid white;}
+    100%{box-shadow: 0 0 0px; border: none}
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes border-steady{
+    
+    0%{box-shadow: 0 0 10px #00abf0; border: 1px solid white; }
+    10%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; border: 1px solid white;}
+    20%{box-shadow: 0 0 10px #00abf0; border: 1px solid white;}
+    
+
+    40%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0; border: 1px solid white;}
+    50%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; border: 1px solid white;}
+    60%{box-shadow: 0 0 10px #00abf0; border: 1px solid white;}
+    
+
+    80%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0; border: 1px solid white;}
+    90%{box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0; border: 1px solid white;}
+    100%{box-shadow: 0 0 10px #00abf0; border: 1px solid white; }
+}
+
+@keyframes border-glitch{
+    0%{box-shadow:  0 0 0px;}
+    20%{box-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0; border: 1px solid white}
+    30%{box-shadow:  0 0 0px;}
+    40%{box-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0; border: 1px solid white}
+    
+    60%{box-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0; border: 1px solid white}
+    90%{box-shadow:  0 0 0px;}
+    95%{box-shadow:  0 0 10px #00abf0, 0 0 20px #00abf0; border: 1px solid white}
+    
+    100%{text-shadow:  0 0 0px;}
+}
+
+
+@keyframes bg{
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(5deg);}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-10deg);}
+    90%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
+}
